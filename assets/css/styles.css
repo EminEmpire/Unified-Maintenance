@@ -1,0 +1,59 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #372C0D;
+}
+
+.header-top {
+    position: relative; /* Ensure this container is positioned relatively */
+    z-index: 10; /* Ensure it stays on top of the navbar if needed */
+}
+
+.header-top .navbar-brand {
+    position: absolute; /* Position the logo absolutely within its parent */
+    bottom: -170px; /* Adjust this value to control the overlap */
+    left: 5%; /* Center the logo horizontally */
+    transform: translateX(-50%); /* Adjust horizontal positioning to truly center it */
+    z-index: 1020; /* Ensures the logo is above the navbar */
+}
+
+.logo-height {
+    height: auto; /* Adjust based on your logo's aspect ratio */
+    max-height: 20vh; /* Adjust this value to fit the logo appropriately */
+    width: auto; /* Keep the logo responsive */
+}
+
+.btn-consultation {
+    margin-right: 158px; /* Aligns the button to the right edge if needed */
+}
+
+.navbar {
+    margin-top: 10vh; /* Adjust this value to move the navbar down */
+    background-color: #DB953E;
+}
+
+
+.btn-consultation {
+    background-color: #B74E1F;
+    color: #ECEBEB;
+}
+
+
+.navbar-toggler {
+    position: relative;
+    left: 38vw;
+}
+
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .header-top .navbar-brand {
+        bottom: -30px; /* Smaller overlap for smaller screens */
+        max-height: 80px; /* Adjust for smaller logo on mobile devices */
+        left: 19%; /* Center the logo horizontally */
+    }
+
+    .navbar {
+        margin-top: 9.5vh; /* Less space above the navbar on smaller screens */
+    }
+}
+

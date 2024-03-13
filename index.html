@@ -10,28 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #372C0D;
-        }
-        .navbar, .footer {
-            background-color: #DB953E;
-        }
-        .btn-consultation {
-            background-color: #B74E1F;
-            color: #ECEBEB;
-        }
-    </style>
 </head>
 <body>
+    <div class="header-top d-flex justify-content-between align-items-center px-3 py-2">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/media/img/logo.png" alt="Unified Maintenance Logo" class="img-fluid logo-height">
+        </a>
+        <button class="btn btn-consultation" type="button">Book a Free Consultation</button>
+    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="assets/media/img/logo.png" alt="Unified Maintenance Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-caps text-center">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -55,9 +48,10 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <button class="btn btn-consultation my-2 my-sm-0" type="submit">Book a Free Consultation</button>
         </div>
     </nav>
+    
+    
 
     <section class="hero-video">
         <video autoplay muted loop id="myVideo">
