@@ -15,6 +15,7 @@ body {
     height: auto; /* Adjust based on your logo's aspect ratio */
     max-height: 20vh; /* Adjust this value to fit the logo appropriately */
     width: auto; /* Keep the logo responsive */
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3)); /* Stronger shadow */
 }
 
 .btn-consultation {
@@ -25,12 +26,14 @@ body {
 .navbar {
     margin-top: -6vh; /* Adjust this value to move the navbar down */
     background-color: #DB953E;
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3)); /* Stronger shadow */
 }
 
 
 .btn-consultation {
     background-color: #B74E1F;
     color: #ECEBEB;
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.2)); /* Stronger shadow */
 }
 
 
