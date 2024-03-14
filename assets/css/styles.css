@@ -1,36 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Belanosima:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Belanosima:wght@400;600;700&family=Fjalla+One&display=swap');
 
-
-body {
+body, html {
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
-    color: #372C0D;
+    color: #000000;
 }
 
 .header-top .navbar-brand {
     position: relative; /* Ensure this container is positioned relatively */
-    bottom: -17px; /* Adjust this value to control the overlap */
+    bottom: 9px; /* Adjust this value to control the overlap */
     left: 5%; /* Center the logo horizontally */
     transform: translateX(-50%); /* Adjust horizontal positioning to truly center it */
     z-index: 1020; /* Ensures the logo is above the navbar */
-    
 }
 
 .logo-height {
     height: auto; /* Adjust based on your logo's aspect ratio */
     max-height: 24vh; /* Adjust this value to fit the logo appropriately */
     width: auto; /* Keep the logo responsive */
-    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3)); /* Stronger shadow */
-}
-
-.btn-consultation {
-    margin-right: 158px; /* Aligns the button to the right edge if needed */
-    margin-bottom: 80px;
+    filter: drop-shadow(0 3px 0px rgb(255, 255, 255)); /* Stronger shadow */
 }
 
 
 .btn-consultation {
-    background-color: #B74E1F;
+    background-color: #94AE21;
     color: #ECEBEB;
     font-family: 'Bai Jamjuree', sans-serif; /* Add the font family */
     font-weight: 500; /* Adjust weight as needed */
@@ -38,6 +33,8 @@ body {
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
+    margin-right: 158px; /* Aligns the button to the right edge if needed */
+    margin-bottom: 80px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     filter: drop-shadow(0 6px 8px rgba(0,0,0,0.2));
     display: inline-flex;
@@ -46,8 +43,8 @@ body {
 }
 
 .btn-consultation:hover, .btn-consultation:focus {
-    background-color: #D9734F;
-    color: #FFFFFF;
+    background-color: #c3d809;
+    color: #040404;
     transform: translateY(-3px);
     filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
 }
@@ -58,13 +55,13 @@ body {
 
 
 .navbar {
-    margin-top: -6vh; /* As previously set */
-    background-color: #DB953E;
+    margin-top: -15vh; /* As previously set */
+    background-color: #e99d46;
     filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3));
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: x-large;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
@@ -84,38 +81,110 @@ body {
     height: 100%;
 }
 
+.hero-slideshow-container {
+    position: relative;
+    height: 70vh; /* Define a fixed height for the slideshow container */
+}
+
 .slideshow {
-    height: 70vh; /* Adjust based on your preference */
+    height: 70vh;
     width: 100%;
     background-size: cover;
     background-position: center;
-    animation: slideshow 40s infinite;
+    animation: slideshow 60s infinite;
 }
 
 @keyframes slideshow {
     0%, 100% { background-image: url('../media/img/hero1.jpg'); }
     20% { background-image: url('../media/img/hero2.jpg'); }
     40% { background-image: url('../media/img/hero3.jpg'); }
-    60% { background-image: url('../media/img/hero4.jpg'); } /* Assuming you have only 3 images, adjust if more */
-    80% { background-image: url('../media/img/hero5.jpg'); } /* Repeating some images for a smooth cycle */
+    60% { background-image: url('../media/img/hero4.jpg'); } 
+    80% { background-image: url('../media/img/hero5.jpg'); } 
 }
 
-.video-overlay {
+.overlay-container {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: #fff;
+    justify-content: center;
+}
+
+.overlay-text-container {
+    max-width: 30%; /* Adjust the maximum width of the overlay container */
+    margin-left: -60%; /* Adjust the left margin as needed */
+    margin-bottom: 0%; /* Adjust the bottom margin as needed */
+    display: flex; /* Use flexbox */
+    justify-content: flex-start; /* Align items to the start of the container (left side) */
+}
+
+
+.overlay-text {
     text-align: center;
+    background-color: #e99c45c0;
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.overlay-text:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Adjust shadow on hover */
+}
+
+.overlay-text h1 {
+    color: #000000; /* Adjust text color */
+    margin: auto;
 }
 
 
 /* Hide dividers on screens smaller than 992px */
+@media (max-width: 375px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+    
+
+    .header-top .navbar-brand {
+        position: relative; /* Ensure this container is positioned relatively */
+        bottom: 9px; /* Adjust this value to control the overlap */
+        left: 50%; /* Center the logo horizontally */
+        transform: translateX(-50%); /* Adjust horizontal positioning to truly center it */
+        z-index: 1020; /* Ensures the logo is above the navbar */
+    }
+
+    .logo-height {
+        height: auto; /* Adjust the height as needed */
+        width: auto; /* Keep the logo responsive */
+        filter: drop-shadow(0 3px 0px rgb(255, 255, 255)); /* Stronger shadow */
+    }
+
+    .overlay-text h1 {
+        font-size: 1.5rem;
+        color: #000000; /* Adjust text color */
+        margin: auto;
+    }
+
+    .btn-consultation {
+        background-color: #94AE21;
+        color: #ECEBEB;
+        font-family: 'Bai Jamjuree', sans-serif; /* Add the font family */
+        font-weight: 500; /* Adjust weight as needed */
+        font-size: 10px; /* Or any size you prefer */
+        padding: 15px 30px;
+
+    }
+}
+
+
 @media (max-width: 991.98px) {
     .nav-divider {
         display: none;
