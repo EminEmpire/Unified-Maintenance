@@ -162,7 +162,7 @@ body, html {
     }
 
     .logo-height {
-        height: auto; /* Adjust the height as needed */
+        height: 10%; /* Adjust the height as needed */
         width: auto; /* Keep the logo responsive */
         filter: drop-shadow(0 3px 0px rgb(255, 255, 255)); /* Stronger shadow */
     }
@@ -180,7 +180,7 @@ body, html {
         font-weight: 500; /* Adjust weight as needed */
         font-size: 10px; /* Or any size you prefer */
         padding: 15px 30px;
-
+        margin-left: 20%;
     }
 }
 
