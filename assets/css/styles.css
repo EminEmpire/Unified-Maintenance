@@ -99,7 +99,7 @@ body, html {
     0%, 100% { background-image: url('../media/img/hero1.jpg'); }
     20% { background-image: url('../media/img/hero2.jpg'); }
     40% { background-image: url('../media/img/hero3.jpg'); }
-    60% { background-image: url('../media/img/hero4.jpg'); } 
+    60% { background-image: url('../media/img/hero4.png'); } 
     80% { background-image: url('../media/img/hero5.jpg'); } 
 }
 
@@ -144,6 +144,26 @@ body, html {
     color: #000000; /* Adjust text color */
     margin: auto;
 }
+
+.backgroundcont {
+    background-color: #e99c45c0;
+    padding: 1%; /* Add padding as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+
+}
+
+.container {
+    max-width: 800px; /* Adjust maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.company-info p {
+    color: #ffffff; /* Adjust text color for better contrast */
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+
 
 
 /* Hide dividers on screens smaller than 992px */
