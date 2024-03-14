@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Belanosima:wght@400;600;700&display=swap');
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #372C0D;
@@ -5,15 +9,16 @@ body {
 
 .header-top .navbar-brand {
     position: relative; /* Ensure this container is positioned relatively */
-    bottom: -6px; /* Adjust this value to control the overlap */
+    bottom: -17px; /* Adjust this value to control the overlap */
     left: 5%; /* Center the logo horizontally */
     transform: translateX(-50%); /* Adjust horizontal positioning to truly center it */
     z-index: 1020; /* Ensures the logo is above the navbar */
+    
 }
 
 .logo-height {
     height: auto; /* Adjust based on your logo's aspect ratio */
-    max-height: 20vh; /* Adjust this value to fit the logo appropriately */
+    max-height: 24vh; /* Adjust this value to fit the logo appropriately */
     width: auto; /* Keep the logo responsive */
     filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3)); /* Stronger shadow */
 }
@@ -23,23 +28,66 @@ body {
     margin-bottom: 80px;
 }
 
-.navbar {
-    margin-top: -6vh; /* Adjust this value to move the navbar down */
-    background-color: #DB953E;
-    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3)); /* Stronger shadow */
-}
-
 
 .btn-consultation {
     background-color: #B74E1F;
     color: #ECEBEB;
-    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.2)); /* Stronger shadow */
+    font-family: 'Bai Jamjuree', sans-serif; /* Add the font family */
+    font-weight: 500; /* Adjust weight as needed */
+    font-size: 20px; /* Or any size you prefer */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.2));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-consultation:hover, .btn-consultation:focus {
+    background-color: #D9734F;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
+}
+
+.btn-consultation i {
+    margin-right: 10px;
 }
 
 
-.navbar-toggler {
-    position: relative;
-    left: 38vw;
+.navbar {
+    margin-top: -6vh; /* As previously set */
+    background-color: #DB953E;
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3));
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.nav-divider {
+    color: #ffffff; /* White color for the divider */
+    padding: 0 15px; /* Adjust horizontal padding for spacing */
+    font-size: 24px; /* Increase font size for a larger divider symbol */
+    line-height: 1.5; /* Adjust line height to vertically align the divider */
+    display: inline-flex; /* Use flex to center the content vertically */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Ensure nav items are aligned with the increased height of the dividers */
+.navbar-nav .nav-item, .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 
+/* Hide dividers on screens smaller than 992px */
+@media (max-width: 991.98px) {
+    .nav-divider {
+        display: none;
+    }
+}
