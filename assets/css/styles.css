@@ -212,6 +212,7 @@ body, html {
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .service-item:hover {
@@ -232,23 +233,11 @@ body, html {
 }
 
 .service-item p {
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.6;
-    color: #666;
+    color: #147cf3;
 }
 
-.more-info {
-    display: block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.more-info:hover {
-    color: #525252;
-}
 
 .additional-info {
     display: none;
