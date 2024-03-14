@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 </head>
 <body>
     <div class="header-top d-flex justify-content-between align-items-center px-3 py-2">
@@ -71,10 +73,17 @@
     <section class="company-info">
         <div class="backgroundcont">
             <div class="container">
-                <p>Unified Maintenance specializes in the day-to-day upkeep of properties, ensuring smooth operation and maintenance. Alongside, the company handles rent collection for property owners, providing a comprehensive management service for a fee.</p>
+                <div class="buttons-container">
+                    <p>Unlock the potential of your property with our expert services. <br> Let's embark on a journey to elevate your property's value and enhance its beauty together!</p>
+                    <div class="button" id="get-quote-button">
+                        <div class="button-text">GET YOUR QUOTE</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
+    
     
 
     <section class="contact-form">
@@ -93,8 +102,14 @@
         </div>
     </footer>
 
-    <!-- Bootstrap and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <!-- JS -->
+    <script> 
+    document.getElementById('get-quote-button').addEventListener('click', function() {
+        // Handle click event for "Get Your Quote Now" button
+        window.location.href = '#';
+    });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
