@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Belanosima:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Belanosima:wght@400;600;700&family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body, html {
     height: 100%;
@@ -281,6 +281,43 @@ body, html {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+
+
+.abt-us {
+    padding: 120px 0;
+    background-image: url('../media/img/abtus.png');
+    background-size: cover;
+    background-color: #fcfeff;
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.954); /* Adjust the background color and opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
+
+}
+
+.company-name {
+    font-family: 'Belanosima', sans-serif; /* Heading font */
+    color: #007bff; /* Blue color for company name */
+}
+
+.about-content p {
+    font-family: 'Josefin Sans', sans-serif; /* Body text font */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.about-content strong {
+    font-family: 'Belanosima', sans-serif; /* Strong emphasis font */
+    font-weight: 100;
+    font-size: large;
+    color: #0aac30; /* Green color for emphasis */
 }
 
 
