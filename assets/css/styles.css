@@ -307,7 +307,6 @@ body, html {
 }
 
 .about-content p {
-    font-family: 'Josefin Sans', sans-serif; /* Body text font */
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 50px;
