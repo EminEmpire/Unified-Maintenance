@@ -319,6 +319,120 @@ body, html {
     color: #0aac30; /* Green color for emphasis */
 }
 
+.section-title-cnt  {
+    text-align: center;
+    margin-top: -150px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
+}
+
+.cnt-us {
+    padding: 120px 0;
+    background-image: url('../media/img/contact.png');
+    background-size: cover;
+    background-color: #fcfeff;
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
+}
+
+.cnt-us .container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.559));
+
+}
+
+.cnt-us .container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cnt-us form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cnt-us .form-group {
+    margin-bottom: 20px;
+}
+
+.cnt-us label {
+    font-weight: bold;
+}
+
+.cnt-us input[type="text"],
+.cnt-us input[type="email"],
+.cnt-us input[type="tel"],
+.cnt-us textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.cnt-us textarea {
+    resize: vertical;
+}
+
+.cnt-us button[type="submit"] {
+    width: 100%;
+}
+
+.footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-brand {
+    margin-right: 20px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-menu-item {
+    margin-right: 10px;
+}
+
+.footer-menu-divider {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.footer-menu-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu-link:hover {
+    color: #94AE21;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
 
 /* Hide dividers on screens smaller than 992px */
 @media (max-width: 375px) {
