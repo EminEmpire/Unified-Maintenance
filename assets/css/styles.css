@@ -954,11 +954,54 @@ body, html {
         margin-top: -40px;
     }
 
- 
-   
-
-    
 }
+
+@media (max-width: 932px) and (max-height: 431px) {
+    .overlay-container{ 
+        position: absolute;
+        top: 0;
+        left: 5px;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        }
+    
+        .overlay-text {
+            text-align: center;
+            background-color: #ccccccb6;
+            font-family: "Fjalla One", sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-style: normal;
+            padding: 20px; /* Adjust padding as needed */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+            transition: box-shadow 0.3s ease; /* Add transition for hover effect */
+        }
+        
+        .overlay-text h1 {
+            font-size: 1.5rem;
+            color: #000000; /* Adjust text color */
+            margin: auto;
+            filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
+    
+        }
+
+
+    .btn-consultation {
+        background-color: #94AE21;
+        color: #ECEBEB;
+        font-family: 'Bai Jamjuree', sans-serif; /* Add the font family */
+        font-weight: 500; /* Adjust weight as needed */
+        font-size: 10px; /* Or any size you prefer */
+        margin-top: 20px;
+        padding: 2px 20px;
+    }
+  }
+  
 
 @media (max-width: 991.98px) {
     .nav-divider {
