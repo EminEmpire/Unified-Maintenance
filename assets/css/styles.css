@@ -534,6 +534,18 @@ body, html {
         bottom: 9px;
     }
 
+
+    .footer-brand {
+        margin-left: -90px;
+    }
+
+    .footer-logo {
+        position: relative;
+        bottom: 100px;
+        transform: translateX(290%); /* Adjust horizontal positioning to truly center it */
+        height: 100px;
+        width: auto;
+    }
 }
 
 
