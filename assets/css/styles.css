@@ -9,6 +9,10 @@ body, html {
     color: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header-top .navbar-brand {
     position: relative; /* Ensure this container is positioned relatively */
     bottom: 9px; /* Adjust this value to control the overlap */
@@ -237,7 +241,7 @@ body, html {
 
 .service-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.592);
 }
 
 .service-item i {
