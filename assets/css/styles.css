@@ -343,7 +343,6 @@ body, html {
     padding: 40px;
     border-radius: 10px;
     filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.559));
-
 }
 
 .cnt-us .container h2 {
@@ -509,6 +508,32 @@ body, html {
     .button-text {
         font-size: 20px;
     }
+
+    .services {
+        position: relative;
+        padding: 155px 0;
+        bottom: 40px;
+        background-image: url('../media/img/servbck.png');
+        background-size: cover;
+        background-color: #fcfeff;
+        filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+  
+    .abt-us {
+        position: relative;
+        padding: 0px 0;
+    }
+    
+    .section-title-cnt {
+        font-size: 3rem;
+        position: relative;
+        bottom: 9px;
+    }
+
 }
 
 
