@@ -444,22 +444,48 @@ body, html {
 
     .header-top .navbar-brand {
         position: relative; /* Ensure this container is positioned relatively */
-        bottom: 9px; /* Adjust this value to control the overlap */
+        bottom: -17px; /* Adjust this value to control the overlap */
         left: 50%; /* Center the logo horizontally */
         transform: translateX(-50%); /* Adjust horizontal positioning to truly center it */
         z-index: 1020; /* Ensures the logo is above the navbar */
     }
 
     .logo-height {
-        height: 10%; /* Adjust the height as needed */
+        height: 15%; /* Adjust the height as needed */
         width: auto; /* Keep the logo responsive */
-        filter: drop-shadow(0 3px 0px rgb(255, 255, 255)); /* Stronger shadow */
+    }
+    
+    .overlay-container{ 
+    position: absolute;
+    top: 0;
+    left: 5px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     }
 
+    .overlay-text {
+        text-align: center;
+        background-color: #ccccccb6;
+        font-family: "Fjalla One", sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-style: normal;
+        padding: 20px; /* Adjust padding as needed */
+        border-radius: 10px; /* Add border radius for rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+        transition: box-shadow 0.3s ease; /* Add transition for hover effect */
+    }
+    
     .overlay-text h1 {
         font-size: 1.5rem;
         color: #000000; /* Adjust text color */
         margin: auto;
+        filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
+
     }
 
     .btn-consultation {
@@ -468,8 +494,20 @@ body, html {
         font-family: 'Bai Jamjuree', sans-serif; /* Add the font family */
         font-weight: 500; /* Adjust weight as needed */
         font-size: 10px; /* Or any size you prefer */
-        padding: 15px 30px;
-        margin-left: 20%;
+        padding: 2px 30px;
+        margin-left: 24%;
+    }
+
+  
+
+    .backgroundcont {
+        position: relative;
+        bottom: 40px;
+        font-size: 10px;
+    }
+
+    .button-text {
+        font-size: 20px;
     }
 }
 
