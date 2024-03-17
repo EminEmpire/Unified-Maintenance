@@ -291,7 +291,7 @@ html {
 
 .abt-us {
     padding: 120px 0;
-    background-image: url('../media/img/abtus.png');
+    background-image: url('../media/img/abtus.jpg');
     background-size: cover;
     background-color: #fcfeff;
     filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
@@ -336,7 +336,7 @@ html {
 
 .cnt-us {
     padding: 120px 0;
-    background-image: url('../media/img/contact.png');
+    background-image: url('../media/img/contact.jpg');
     background-size: cover;
     background-color: #fcfeff;
     filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
