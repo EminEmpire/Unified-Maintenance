@@ -51,34 +51,36 @@
     </nav>
     
     
-
-    <section class="hero-slideshow-container">
-        <div class="slideshow"></div> 
-        <div class="overlay-container"> 
-            <div class="overlay-text-container" data-aos="fade-up">
-                <div class="overlay-text">
-                    <h1>Specialising in the day-to-day upkeep of properties and ensuring smooth operation and maintenance.</h1>
+    <section class="cnt-us" id="contact-us">
+        <div class="container">
+            <h2 class="section-title-cnt">Contact Us</h2>
+           <form action="https://formspree.io/f/xnqebjgp" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="enquiry">Enquiry</label>
+                    <textarea class="form-control" id="enquiry" name="enquiry" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #94AE21;">Submit</button>
+            </form>
         </div>
     </section>
     
-    
 
-
-    <section class="company-info">
-        <div class="backgroundcont">
-            <div class="container">
-                <div class="buttons-container">
-                    <p>Unlock the potential of your property with our expert services. <br> Let's embark on a journey to elevate your property's value and enhance its beauty together!</p>
-                    <div class="button" id="get-quote-button">
-                        <div class="button-text">GET YOUR QUOTE</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <footer class="footer">
         <div class="container">
             <nav class="footer-nav">
@@ -126,7 +128,7 @@
     
             $('#get-quote-button').click(function() {
                 // Handle click event for "Get Your Quote Now" button
-                window.location.href = 'contactus.html';
+                window.location.href = '#contact-us';
             });
         });
 
