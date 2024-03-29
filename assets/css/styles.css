@@ -97,18 +97,19 @@ html {
 .slideshow {
     height: 70vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    animation: slideshow 60s infinite;
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes slideshow {
-    0%  { background-image: url('../media/img/hero1.webp'); }
-    20% { background-image: url('../media/img/hero2.webp'); }
-    40% { background-image: url('../media/img/hero3.webp'); }
-    60% { background-image: url('../media/img/hero4.webp'); } 
-    100% { background-image: url('../media/img/hero5.webp'); } 
+.slide {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the slide area without stretching */
 }
+
+
 
 .overlay-container {
     position: absolute;
