@@ -703,7 +703,7 @@ html {
 
     .footer-logo {
         position: relative;
-        bottom: 150px;
+        margin-bottom: 11rem;
         transform: translateX(290%); /* Adjust horizontal positioning to truly center it */
         height: 100px;
         width: auto;
