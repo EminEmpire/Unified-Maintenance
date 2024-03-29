@@ -113,25 +113,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js" defer></script>
-    <script defer>
-        document.addEventListener("DOMContentLoaded", function() {
-            $('.service-item').click(function() {
-                $(this).toggleClass('clicked');
-                $(this).find('.additional-info').slideToggle();
-            });
-
-            $('#get-quote-button').click(function() {
-                window.location.href = 'contactus.html';
-            });
-
-            $('#navbarNavDropdown').on('show.bs.collapse', function () {
-                $(".header-top .navbar-brand img").attr("src", "assets/media/img/collapsedlogo.png");
-            });
-
-            $('#navbarNavDropdown').on('hide.bs.collapse', function () {
-                $(".header-top .navbar-brand img").attr("src", "assets/media/img/logo.png");
-            });
-        });
-    </script>
+    <script src="assets/js/mainjs.js" defer></script>
 </body>
 </html>
