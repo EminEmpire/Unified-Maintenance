@@ -697,6 +697,11 @@ html {
         position: relative;
     }
 
+    .cnt-us {
+        padding: 185px 0;
+        bottom: 10px;
+    }
+    
     .form-group {
     position: relative; 
     top: 20px;
