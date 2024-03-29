@@ -567,11 +567,13 @@ html {
 
     .section-title {
         font-size: 3rem;
-    }
+   }
   
     .abt-us {
         position: relative;
         padding: 0px 0;
+        padding: 155px 0;
+        bottom: 10px;
     }
     
     .section-title-cnt {
@@ -580,7 +582,10 @@ html {
         bottom: 9px;
     }
 
-
+    .cnt-us {
+        padding: 185px 0;
+        bottom: 10px;
+    }
     .footer-brand {
         margin-left: -90px;
     }
