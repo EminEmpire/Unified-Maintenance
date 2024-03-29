@@ -103,11 +103,11 @@ html {
 }
 
 @keyframes slideshow {
-    0%, 100% { background-image: url('../media/img/hero1.jpg'); }
-    20% { background-image: url('../media/img/hero2.jpg'); }
-    40% { background-image: url('../media/img/hero3.jpg'); }
-    60% { background-image: url('../media/img/hero4.jpg'); } 
-    80% { background-image: url('../media/img/hero5.jpg'); } 
+    0%, 100% { background-image: url('../media/img/hero1.webp'); }
+    20% { background-image: url('../media/img/hero2.webp'); }
+    40% { background-image: url('../media/img/hero3.webp'); }
+    60% { background-image: url('../media/img/hero4.webp'); } 
+    80% { background-image: url('../media/img/hero5.webp'); } 
 }
 
 .overlay-container {
@@ -200,7 +200,7 @@ html {
 /* Styles for services section */
 .services {
     padding: 120px 0;
-    background-image: url('../media/img/servbck.png');
+    background-image: url('../media/img/servbck.webp');
     background-size: cover;
     background-color: #fcfeff;
     filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
@@ -328,7 +328,7 @@ html {
 
 .abt-us {
     padding: 120px 0;
-    background-image: url('../media/img/abtus.jpg');
+    background-image: url('../media/img/abtus.webp');
     background-size: cover;
     background-color: #fcfeff;
     filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
@@ -374,7 +374,7 @@ html {
 
 .cnt-us {
     padding: 120px 0;
-    background-image: url('../media/img/contact.png');
+    background-image: url('../media/img/contact.webp');
     background-size: cover;
     background-color: #fcfeff;
     filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
@@ -555,7 +555,7 @@ html {
         position: relative;
         padding: 155px 0;
         bottom: 10px;
-        background-image: url('../media/img/servbck.png');
+        background-image: url('../media/img/servbck.webp');
         background-size: cover;
         background-position: center -10rem; /* Moves the background image 20 pixels up */
         background-color: #fcfeff;
@@ -676,7 +676,7 @@ html {
         position: relative;
         padding: 155px 0;
         top: 0px;
-        background-image: url('../media/img/servbck.png');
+        background-image: url('../media/img/servbck.webp');
         background-size: cover;
         background-color: #fcfeff;
         background-position: center -10rem; /* Moves the background image 20 pixels up */
@@ -701,7 +701,7 @@ html {
         padding: 185px 0;
         bottom: 10px;
     }
-    
+
     .form-group {
     position: relative; 
     top: 20px;
@@ -798,7 +798,7 @@ html {
         position: relative;
         padding: 155px 0;
         top: 0px;
-        background-image: url('../media/img/servbck.png');
+        background-image: url('../media/img/servbck.webp');
         background-size: cover;
         background-color: #fcfeff;
         filter: drop-shadow(0 8px 10px rgba(0,0,0,0.3));
