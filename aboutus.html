@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unified Maintenance</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Preload Bootstrap CSS -->
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></noscript>
+    <!-- Preload Google Font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <!-- Font Awesome with async loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
 </head>
 <body>
     <div class="header-top d-flex justify-content-between align-items-center px-3 py-2">
         <a href="index.html" class="navbar-brand">
-            <img src="assets/media/img/logo.png" alt="Unified Maintenance Logo" class="logo-height">
+            <img src="assets/media/img/logo.png" alt="Unified Maintenance Logo" class="logo-height" loading="lazy">
         </a>
         <div class="button-container">
             <button class="btn btn-consultation" type="button" onclick="window.location.href='contactus.html';"><i class="fas fa-phone-alt"></i> BOOK A CONSULTATION</button>
@@ -71,7 +72,7 @@
         <div class="container">
             <nav class="footer-nav">
                 <a class="footer-brand" href="#">
-                    <img src="assets/media/img/footerlogo.png" alt="Unified Maintenance Footer Logo" class="footer-logo">
+                    <img src="assets/media/img/footerlogo.png" alt="Unified Maintenance Footer Logo" class="footer-logo" loading="lazy">
                 </a>
                 <ul class="footer-menu">
                     <li class="footer-menu-item">

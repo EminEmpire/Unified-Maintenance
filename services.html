@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unified Maintenance</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Preload Bootstrap CSS for faster loading -->
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></noscript>
+    <!-- Google Font with efficient loading -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <!-- Async loading for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
 </head>
 <body>
     <div class="header-top d-flex justify-content-between align-items-center px-3 py-2">
@@ -32,19 +33,19 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav nav-caps text-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a> 
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <span class="nav-divider">|</span>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">SERVICES</a> 
+                    <a class="nav-link" href="services.html">SERVICES</a>
                 </li>
                 <span class="nav-divider">|</span>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a> 
+                    <a class="nav-link" href="aboutus.html">About Us</a>
                 </li>
                 <span class="nav-divider">|</span>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactus.html">Contact</a> 
+                    <a class="nav-link" href="contactus.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -231,7 +232,7 @@
         <div class="container">
             <nav class="footer-nav">
                 <a class="footer-brand" href="#">
-                    <img src="assets/media/img/footerlogo.png" alt="Unified Maintenance Footer Logo" class="footer-logo">
+                    <img src="assets/media/img/footerlogo.png" alt="Unified Maintenance Footer Logo" class="footer-logo" loading="lazy">
                 </a>
                 <ul class="footer-menu">
                     <li class="footer-menu-item">
@@ -265,7 +266,7 @@
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+    <script defer>
         $(document).ready(function() {
             $('.service-item').click(function() {
                 $(this).toggleClass('clicked');
