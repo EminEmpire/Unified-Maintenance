@@ -103,11 +103,11 @@ html {
 }
 
 @keyframes slideshow {
-    0%, 100% { background-image: url('../media/img/hero1.webp'); }
+    0%  { background-image: url('../media/img/hero1.webp'); }
     20% { background-image: url('../media/img/hero2.webp'); }
     40% { background-image: url('../media/img/hero3.webp'); }
     60% { background-image: url('../media/img/hero4.webp'); } 
-    80% { background-image: url('../media/img/hero5.webp'); } 
+    100% { background-image: url('../media/img/hero5.webp'); } 
 }
 
 .overlay-container {
@@ -227,21 +227,6 @@ html {
     color: #333;
 }
 
-/* .service-item {
-    text-align: center;
-    padding: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-*/
-
 .service-item {
     text-align: center;
     padding: 30px;
@@ -278,7 +263,6 @@ html {
   /* To add a stroke effect, we use a text stroke, which might not be supported in all browsers */
   .service-item i {
     -webkit-text-stroke: 1px #0056b3; /* Stroke effect for WebKit browsers */
-    text-stroke: 1px #b2d5fa; /* Stroke effect (not widely supported as of now) */
   }
   
   /* Hover effect to demonstrate the transition */
@@ -689,7 +673,7 @@ html {
   
     .abt-us {
         position: relative;
-        padding: 0px 0;
+        padding: 150px 0;
     }
     
     .section-title-cnt {

@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     $('#get-quote-button').click(function() {
         // Handle click event for "Get Your Quote Now" button
-        window.location.href = '#contact-us';
+        window.location.href = 'contactus.html';
     });
 });
 
