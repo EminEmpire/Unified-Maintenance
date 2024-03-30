@@ -27,7 +27,6 @@ html {
     height: auto; /* Adjust based on your logo's aspect ratio */
     max-height: 24vh; /* Adjust this value to fit the logo appropriately */
     width: auto; /* Keep the logo responsive */
-    filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
 }
 
 
@@ -42,7 +41,6 @@ html {
     border-radius: 5px;
     margin-right: 158px; /* Aligns the button to the right edge if needed */
     margin-bottom: 80px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     filter: drop-shadow(0 6px 8px rgba(0,0,0,0.2));
     display: inline-flex;
     align-items: center;
@@ -133,20 +131,16 @@ html {
 
 .overlay-text {
     text-align: center;
-    background-color: #ccccccc0;
-    font-family: "Fjalla One", sans-serif;
+    background-color: #ffffffc9;
+    font-family:inherit;
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     padding: 20px; /* Adjust padding as needed */
     border-radius: 10px; /* Add border radius for rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-    transition: box-shadow 0.3s ease; /* Add transition for hover effect */
 }
 
-.overlay-text:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Adjust shadow on hover */
-}
 
 .overlay-text h1 {
     color: #000000; /* Adjust text color */
@@ -232,7 +226,7 @@ html {
     text-align: center;
     padding: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: rgba(255, 255, 255, 0.41);
+    background: rgba(255, 255, 255, 0.918);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
@@ -495,19 +489,16 @@ html {
 
     .overlay-text {
         text-align: center;
-        background-color: #ccccccb6;
-        font-family: "Fjalla One", sans-serif;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-transform: uppercase;
-        font-weight: 400;
         font-style: normal;
-        padding: 20px; /* Adjust padding as needed */
+        padding: 5px; /* Adjust padding as needed */
         border-radius: 10px; /* Add border radius for rounded corners */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-        transition: box-shadow 0.3s ease; /* Add transition for hover effect */
     }
     
     .overlay-text h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #000000; /* Adjust text color */
         margin: auto;
         filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
@@ -577,7 +568,8 @@ html {
 
     .footer-logo {
         position: relative;
-        bottom: 150px;
+        bottom: 0px;
+        margin-bottom: 200%;
         transform: translateX(290%); /* Adjust horizontal positioning to truly center it */
         height: 100px;
         width: auto;
@@ -616,24 +608,15 @@ html {
 
     }
 
-    .overlay-text { /* Specialising etc etc */
+    .overlay-text {
         text-align: center;
-        background-color: #ccccccb6;
-        font-family: "Fjalla One", sans-serif;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-style: normal;
-        padding: 20px; /* Adjust padding as needed */
+        padding: 5px; /* Adjust padding as needed */
         border-radius: 10px; /* Add border radius for rounded corners */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-        transition: box-shadow 0.3s ease; /* Add transition for hover effect */
     }
     
-    .overlay-text h1 { /* Specialising etc etc */
+    .overlay-text h1 {
         font-size: 1.5rem;
-        color: #000000; /* Adjust text color */
-        margin: auto;
-        filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
 
     }
 
@@ -739,23 +722,13 @@ html {
 
     .overlay-text {
         text-align: center;
-        background-color: #ccccccb6;
-        font-family: "Fjalla One", sans-serif;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-style: normal;
-        padding: 20px; /* Adjust padding as needed */
+        padding: 5px; /* Adjust padding as needed */
         border-radius: 10px; /* Add border radius for rounded corners */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-        transition: box-shadow 0.3s ease; /* Add transition for hover effect */
     }
     
     .overlay-text h1 {
-        font-size: 1.5rem;
-        color: #000000; /* Adjust text color */
-        margin: auto;
-        filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
-
+        font-size: 1.7rem;
     }
 
     .btn-consultation {
@@ -857,23 +830,12 @@ html {
 
     .overlay-text {
         text-align: center;
-        background-color: #ccccccb6;
-        font-family: "Fjalla One", sans-serif;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-style: normal;
-        padding: 20px; /* Adjust padding as needed */
         border-radius: 10px; /* Add border radius for rounded corners */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-        transition: box-shadow 0.3s ease; /* Add transition for hover effect */
     }
     
     .overlay-text h1 {
-        font-size: 1.5rem;
-        color: #000000; /* Adjust text color */
-        margin: auto;
-        filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
-
+        font-size: 2.3rem;
     }
 
     .btn-consultation {
@@ -949,7 +911,7 @@ html {
 
     .header-top .navbar-brand {
         bottom: 10px; /* Adjust this value to control the overlap */
-        left: 11%; /* Center the logo horizontally */
+        left: 16%; /* Center the logo horizontally */
         transform: translateX(-50%); /* Adjust horizontal positioning to truly center it */
         z-index: 1020; /* Ensures the logo is above the navbar */
     }
@@ -1011,23 +973,13 @@ html {
     
         .overlay-text {
             text-align: center;
-            background-color: #ccccccb6;
-            font-family: "Fjalla One", sans-serif;
-            text-transform: uppercase;
-            font-weight: 400;
             font-style: normal;
-            padding: 20px; /* Adjust padding as needed */
-            border-radius: 10px; /* Add border radius for rounded corners */
+            padding: 5px; /* Adjust padding as needed */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-            transition: box-shadow 0.3s ease; /* Add transition for hover effect */
         }
         
         .overlay-text h1 {
             font-size: 1.5rem;
-            color: #000000; /* Adjust text color */
-            margin: auto;
-            filter: drop-shadow(0 8px 10px rgb(255, 255, 255));
-    
         }
 
 
